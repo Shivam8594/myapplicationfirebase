@@ -102,7 +102,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:hint="@string/et_hint_product_price"
+                android:hint="Product Price(₹)"
                 android:textColorHint="@color/colorsecondarytext"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

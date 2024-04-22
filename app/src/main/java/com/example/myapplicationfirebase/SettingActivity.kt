@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.appcompat.widget.Toolbar
 import com.example.myapplicationfirebase.models.User
 import com.example.myapplicationfirebase.utils.BoldTextView
@@ -34,6 +35,11 @@ class SettingActivity : BaseActivity() {
             val intent = Intent(this@SettingActivity,UserProfileActivity::class.java)
             intent.putExtra(Constants.EXTRA_LOGIN_DETAILS,muserdetails)
             startActivity(intent)
+        }
+        val address = findViewById<LinearLayout>(R.id.ll_address)
+        address.setOnClickListener()
+        {
+            startActivity(Intent(this,address_list::class.java))
         }
 
      }

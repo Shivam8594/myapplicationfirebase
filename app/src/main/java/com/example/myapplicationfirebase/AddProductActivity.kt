@@ -68,7 +68,7 @@ class AddProductActivity : BaseActivity(),  View.OnClickListener {
             {
                 R.id.iv_add_update_product ->
                 {
-                    if (ContextCompat.checkSelfPermission(this,Manifest.permission.READ_EXTERNAL_STORAGE)==PackageManager.PERMISSION_GRANTED)
+                    if (ContextCompat.checkSelfPermission(this,Manifest.permission.READ_EXTERNAL_STORAGE)==PackageManager.PERMISSION_GRANTED || ContextCompat.checkSelfPermission(this,Manifest.permission.READ_MEDIA_IMAGES)==PackageManager.PERMISSION_GRANTED )
                     {
                         Constants.showImagechooser(this)
                     }
@@ -76,7 +76,7 @@ class AddProductActivity : BaseActivity(),  View.OnClickListener {
                     {
                         ActivityCompat.requestPermissions(
                             this,
-                            arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
+                            arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE,),
                             Constants.READ_STORAGE_PERMISSIONS_CODE
                         )
                     }

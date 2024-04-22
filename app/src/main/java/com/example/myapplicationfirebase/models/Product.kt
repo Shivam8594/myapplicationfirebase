@@ -9,7 +9,7 @@ import android.os.Parcelable
     val title:String = "",
     val price:String = "",
     val description:String = "",
-    val stack_quantity:String = "",
+    var stack_quantity:String = "",
     val image:String = "",
     var product_id:String = ""
 

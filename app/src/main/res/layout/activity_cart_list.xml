@@ -85,8 +85,8 @@
 
             <com.example.myapplicationfirebase.utils.BoldTextView
                 android:id="@+id/tv_sub_total"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="28dp"
+                android:layout_height="41dp"
                 android:textAlignment="center"
                 android:textColor="@color/colorsecondarytext"
                 android:textSize="@dimen/checkout_label_value_textSize"
